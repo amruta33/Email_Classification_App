@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail Classifier - Prediction</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .button {
+            background-color: #6bc96f;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: monospace;
+            color: white;
+            padding: 12px 18px;
+            margin-left: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+          textarea{
+            border-radius: 10px;
+            border-color: rgb(120, 121, 122);
+          }
+                  
+        h1{
+            color:#e43a3a;
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter the text of the email:</h1>
+    <form method="post" action="/predict">
+        <textarea name="text" rows="10" cols="80"></textarea><br><br>
+        <button class="button" type="submit">Predict</button>
+    </form>
+</body>
+</html>
